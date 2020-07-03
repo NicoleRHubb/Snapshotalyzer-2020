@@ -9,11 +9,13 @@ This project is a demo, and uses boto3 to manage AWS EC2 instance spanshots.
 
 shotty uses the configuration file created by the AWS cli. e.g.
 
-`aws configure --profile shotty <command> <--project=PROJECT>`
+`aws configure --profile shotty`
 
-*command* is list, start, or stop
-*project* is optional
 
 ## Running
 
-`python3 shotty/shotty.py`
+`python3 shotty/shotty.py <command> <subcommand> <--project=PROJECT>`
+
+*command* is list, start, or stop
+*subcommand* depends on command
+*project* is optional
